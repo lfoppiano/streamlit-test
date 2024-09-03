@@ -41,6 +41,6 @@ if st.session_state.directory:
             with tab:
                 with st.container(height=600):
                     if id == 0:
-                        pdf_viewer(path, width=500, render_text=True)
+                        pdf_viewer(path, width=500, render_text=True, key=id)
                     else:
-                        pdf_viewer(path, width=1000, render_text=True)
+                        pdf_viewer(path, width=1000, render_text=True, key=id)
